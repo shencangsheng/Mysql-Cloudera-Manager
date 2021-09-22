@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: ${ENV:dev}
+  application:
+    name: web
+  jackson:
+    property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+knife4j:
+  # 开启增强配置
+  enable: true
+  setting:
+    # Knife4j默认显示中文(zh-CN),如果开发者想直接显示英文(en-US)，在通过该配置进行设置即可
+    language: zh-CN

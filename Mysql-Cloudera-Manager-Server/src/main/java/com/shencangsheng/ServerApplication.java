@@ -10,15 +10,20 @@
  */
 package com.shencangsheng;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author shencangsheng
  * @create 2021/9/22
  * @since 1.0.0
  */
-
+@SpringBootApplication
 public class ServerApplication {
-
+    public static void main(String[] args) {
+        SpringApplication.run(ServerApplication.class, args);
+    }
 }
